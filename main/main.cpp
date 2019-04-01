@@ -1,11 +1,10 @@
 #include <iostream>
-#include <sstream>
+#include <sstream>  //string
 
 int main() {
     std::cout << "Hello world" << std::endl;
 
     std::stringstream ss;
     ss << "welcome";
-    ss << "ようこそ";
     std::cout << ss.str() << std::endl;
 }

@@ -31,7 +31,8 @@
 *.out
 *.app
 
-.vscode
+#.vscode
+.vscode/ipch
 build
 GTAGS
 GRTAGS
