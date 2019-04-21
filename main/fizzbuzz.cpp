@@ -27,7 +27,7 @@ struct fizz_buzz
             std::cout << "num=" << count_ << " buzz" << std::endl;
         }
         else {
-            // std::cout << "num=" << count_ << std::endl;
+            std::cout << "num=" << count_ << std::endl;
         }
     }
 
