@@ -1,5 +1,3 @@
-package com.nksm.tsukumo;
-
 public class FizzBuzz {
 	
 	static private String calculate(Integer number) {
