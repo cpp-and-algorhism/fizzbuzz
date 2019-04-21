@@ -18,16 +18,16 @@ struct fizz_buzz
         ++count_;
 
         if ((count_ % 3 == 0) && (count_ % 5 == 0)) {
-            std::cout << "num=" << count_ << " fizzbuzz" << std::endl;
+            std::cout << "fizzbuzz" << std::endl;
         }
         else if (count_ % 3 == 0) {
-            std::cout << "num=" << count_ << " fizz" << std::endl;
+            std::cout << "fizz" << std::endl;
         }
         else if (count_ % 5 == 0) {
-            std::cout << "num=" << count_ << " buzz" << std::endl;
+            std::cout << "buzz" << std::endl;
         }
         else {
-            std::cout << "num=" << count_ << std::endl;
+            std::cout << count_ << std::endl;
         }
     }
 
