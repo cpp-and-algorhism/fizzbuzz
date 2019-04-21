@@ -1,6 +1,15 @@
 # 1st
 first
 
+## boost ライブラリのインストール for mac
+
+````
+brew install boost
+
+brew info boost
+//ver 1.69.0 2019-04-07
+````
+
 ## 開発環境の用意
 
 ### extension インストール

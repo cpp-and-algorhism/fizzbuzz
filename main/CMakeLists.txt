@@ -1,8 +1,16 @@
 # 実行プログラムの指定
 LIST (APPEND exec_PROGRAMS
-    main.cpp
+    fizzbuzz.cpp
 )
 
+LIST (APPEND MY_LINK_LIBRARIES
+    ${Boost_TIMER_LIBRARY}
+)
+
+# プロジェクト外のライブラリの指定
+LINK_DIRECTORIES(
+    ${Boost_LIBRARY_DIRS}
+)
 
 # ビルド
 FOREACH (source_file ${exec_PROGRAMS})
@@ -25,6 +33,6 @@ FOREACH (source_file ${exec_PROGRAMS})
         ${MY_LINK_LIBRARIES}
     )
     IF ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang" OR "${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
-        SET_PROPERTY (TARGET ${source_file_we} APPEND_STRING PROPERTY COMPILE_FLAGS "-std=c++17 -Wall -pthread -g")
+        SET_PROPERTY (TARGET ${source_file_we} APPEND_STRING PROPERTY COMPILE_FLAGS "-std=c++17 -Wall -g")
     ENDIF ()
 ENDFOREACH ()
