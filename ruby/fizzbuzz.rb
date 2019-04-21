@@ -11,7 +11,7 @@ range.each{|num|
     elsif (num % 5 == 0) then
         puts 'num= %d buzz' % [num]
     else
-        puts 'num= %d' % [num]
+        #puts 'num= %d' % [num]
     end
 }
 
